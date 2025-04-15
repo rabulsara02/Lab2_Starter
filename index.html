@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" href="/notebook.png" type="image/png">
+        <title>Meeting Minutes</title>
+    </head>
+    
+    <body>
+        <header>
+            <div>Meeting Sections</div>
+            <nav>
+                <ul>
+                    <li><a href="#attendance">Attendance</a></li>
+                    <li><a href="#agenda">Agenda</a></li>
+                    <li><a href="#summary">Summary</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Title of Meeting</h1>
+            
+            <h2>Topic</h2>
+            
+            <h3>Date: 04/15/2025</h3>
+
+            <h3 id="attendance">Attendance</h3>
+            <ul>
+                <li>Rahul Bulsara</li>
+                <li>First Last</li>
+                <li>First Last</li>
+                <li>First Last</li>
+            </ul>
+
+            <h3 id="agenda">Agenda</h3>
+            <ol>
+                <li><input type="checkbox" /> Learn HTML Basics </li>
+                <li><input type="checkbox" /> Create Ordered List </li>
+                <li><input type="checkbox" /> Make Agenda </li>
+            </ol>
+
+            <h3>Last Meeting Catchup</h3>
+
+            <h3>Questions / Comments / Concerns?</h3>
+
+            <h3 id="summary">Summary</h3>
+            <p>Write a <b>quick</b> summary, a few sentences perhaps, about what
+                we went over during this meeting. <br>
+                Maybe add some <em><strong>next steps</strong></em>
+                for the next meeting.
+            </p>
+
+            <h3>Pics/diagrams</h3>
+
+            <h4>
+                Audio element <br>
+                Video element
+            </h4>
+            <details>
+                <summary>Things to keep in mind going forward</summary>
+                <p>Put the summary of the meeting here perhaps?</p>
+            </details>
+            <hr>
+        </main>
+        <footer>
+            <h4 id="subscribe">Subscribe here</h4>
+            <form onsubmit="alert('Yay')">
+                <input type="text" placeholder="Enter Email Address"/>
+                <button>Submit</button>
+            </form>
+        </footer>
+
+        <hr>
+        <h3><i>Forms</i></h3>
+        <fieldset>
+            <legend>Testing Fieldsets</legend>
+            <label for="information">Information</label>
+            <input type="email">
+        </fieldset>
+        
+        <h5>Testing datalist</h5>
+        <label for="application">Choose your default email application:</label>
+        <input list="applications" id="application" name="application">
+        <datalist id="applications">
+            <option value="Yahoo">
+            <option value="Gmail">
+            <option value="Outlook">
+            <option value="Apple Mail">
+            <option value="AOL">
+        </datalist>
+
+        <h5>Testing select</h5>
+        <label for="flavor">Choose your favorite ice cream flavor</label>
+        <select id="flavor" name="flavor">
+            <option value="vanilla">Vanilla</option>
+            <option value="chocolate">Chocolate</option>
+            <option value="strawberry">Strawberry</option>
+            <option value="banana">Banana</option>
+        </select>
+
+        <h5>Testing textarea</h5>
+        <label for="textbox">Please write anything below.</label> <br>
+        <textarea rows="4" cols="50" placeholder="Write anything you please!"></textarea>
+    </body>
+</html>
